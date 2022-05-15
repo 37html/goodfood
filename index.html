@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a href="#" class="header__top-logo-link">
+            <img class="header__top-logo" src="images/logo.png" alt="" >
+          </a>
+          <div class="header__top-contacts">
+            <a class="header__top-contacts-phone" href="#">
+              +7 977 000-00-00
+            </a>
+            <a class="header__top-contacts-email" href="#">support@mail.ru</a>
+          </div>
+          <div class="header__top-buttons">
+            <button class="header__top-login-btn">Войти</button>
+            <button class="header__top-login-partner">Стать партнером</button>
+          </div>
+        </div>
+        <div class="header__top-soclinks">
+          <div class="header__top-soclinks-box">
+            <a class="header__top-soclinks-instagram" href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3ZM1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                  fill="white"
+                />
+                <path
+                  d="M19 6C19 6.55228 18.5523 7 18 7C17.4477 7 17 6.55228 17 6C17 5.44772 17.4477 5 18 5C18.5523 5 19 5.44772 19 6Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="header__top-soclinks-vk" href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.1759 7.02291C22.3243 6.52846 22.1759 6.16504 21.4701 6.16504H19.1362C18.5427 6.16504 18.2693 6.47895 18.121 6.82519C18.121 6.82519 16.934 9.71804 15.2526 11.5971C14.7087 12.1411 14.4614 12.314 14.1647 12.314C14.0163 12.314 13.8016 12.1411 13.8016 11.6467V7.02291C13.8016 6.42943 13.6294 6.16504 13.1348 6.16504H9.46726C9.09651 6.16504 8.87346 6.44044 8.87346 6.7015C8.87346 7.26413 9.71399 7.39383 9.80067 8.9762V12.4132C9.80067 13.1667 9.66464 13.3034 9.36791 13.3034C8.57672 13.3034 6.65227 10.3974 5.51067 7.07242C5.28695 6.4261 5.06257 6.16504 4.4661 6.16504H2.13222C1.4654 6.16504 1.33203 6.47895 1.33203 6.82519C1.33203 7.44334 2.12338 10.5094 5.01622 14.5643C6.94501 17.3333 9.66198 18.8347 12.1346 18.8347C13.6182 18.8347 13.8016 18.5013 13.8016 17.927V15.834C13.8016 15.1671 13.9421 15.0341 14.4118 15.0341C14.7582 15.0341 15.3515 15.2072 16.7363 16.5423C18.3187 18.1245 18.5794 18.8347 19.4696 18.8347H21.8035C22.4703 18.8347 22.8037 18.5013 22.6113 17.8433C22.4009 17.1874 21.6454 16.2362 20.6429 15.1083C20.0989 14.4653 19.2829 13.773 19.0358 13.4269C18.6896 12.9818 18.7884 12.7841 19.0358 12.3887C19.0358 12.3887 21.8792 8.38306 22.1759 7.02307V7.02291Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="header__top-soclinks-fb" href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.99999 22.6499V12.9999H6.79999V9.22992H9.99999V6.41992C9.99999 3.20992 12 1.41992 14.81 1.41992C16.21 1.41992 17.41 1.51992 17.72 1.51992V4.91992H15.72C14.12 4.91992 13.82 5.61992 13.82 6.71992V9.11992H17.53L17 12.9299H13.82V22.5499H9.99999V22.6499Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="header__arrow-box">
+            <img class="header__arrow-img" src="images/arrow-down.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-768">
+      <div class="container">
+        <div class="header-768__top">
+          <a class="header-768__top-logo-link" href="#" >
+            <img class="header-768__top-logo-img" src="images/logo.png" alt="">
+          </a>
+          <div class="header-768__contacts">
+            <a class="header-768__link" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54 2.5C3.6 3.39 3.75 4.26 3.99 5.09L2.79 6.29C2.38 5.09 2.12 3.82 2.03 2.5H3.54ZM13.4 14.52C14.25 14.76 15.12 14.91 16 14.97V16.46C14.68 16.37 13.41 16.11 12.2 15.71L13.4 14.52ZM4.5 0.5H1C0.45 0.5 0 0.95 0 1.5C0 10.89 7.61 18.5 17 18.5C17.55 18.5 18 18.05 18 17.5V14.01C18 13.46 17.55 13.01 17 13.01C15.76 13.01 14.55 12.81 13.43 12.44C13.33 12.4 13.22 12.39 13.12 12.39C12.86 12.39 12.61 12.49 12.41 12.68L10.21 14.88C7.38 13.43 5.06 11.12 3.62 8.29L5.82 6.09C6.1 5.81 6.18 5.42 6.07 5.07C5.7 3.95 5.5 2.75 5.5 1.5C5.5 0.95 5.05 0.5 4.5 0.5Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="header-768__link" href="#">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0.5C4.48 0.5 0 4.98 0 10.5C0 16.02 4.48 20.5 10 20.5H15V18.5H10C5.66 18.5 2 14.84 2 10.5C2 6.16 5.66 2.5 10 2.5C14.34 2.5 18 6.16 18 10.5V11.93C18 12.72 17.29 13.5 16.5 13.5C15.71 13.5 15 12.72 15 11.93V10.5C15 7.74 12.76 5.5 10 5.5C7.24 5.5 5 7.74 5 10.5C5 13.26 7.24 15.5 10 15.5C11.38 15.5 12.64 14.94 13.54 14.03C14.19 14.92 15.31 15.5 16.5 15.5C18.47 15.5 20 13.9 20 11.93V10.5C20 4.98 15.52 0.5 10 0.5ZM10 13.5C8.34 13.5 7 12.16 7 10.5C7 8.84 8.34 7.5 10 7.5C11.66 7.5 13 8.84 13 10.5C13 12.16 11.66 13.5 10 13.5Z" fill="white"/>
+              </svg>
+            </a>
+            <button class="header-768__button-login" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 16.5V1.5H12V0.5H2V16.5H0V18.5H12V3.5H14V18.5H18V16.5H16ZM10 16.5H4V2.5H10V16.5ZM7 8.5H9V10.5H7V8.5Z" fill="white"/>
+              </svg>                
+            </button>
+            <button class="header__top-login-partner">
+              Стать партнером
+            </button>
+          </div>
+        </div>
+        <div class="header-768__top-soclinks-box">
+          <a class="header-768__top-soclinks-instagram" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3ZM1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                fill="white"
+              />
+              <path
+                d="M19 6C19 6.55228 18.5523 7 18 7C17.4477 7 17 6.55228 17 6C17 5.44772 17.4477 5 18 5C18.5523 5 19 5.44772 19 6Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a class="header-768__top-soclinks-vk" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.1759 7.02291C22.3243 6.52846 22.1759 6.16504 21.4701 6.16504H19.1362C18.5427 6.16504 18.2693 6.47895 18.121 6.82519C18.121 6.82519 16.934 9.71804 15.2526 11.5971C14.7087 12.1411 14.4614 12.314 14.1647 12.314C14.0163 12.314 13.8016 12.1411 13.8016 11.6467V7.02291C13.8016 6.42943 13.6294 6.16504 13.1348 6.16504H9.46726C9.09651 6.16504 8.87346 6.44044 8.87346 6.7015C8.87346 7.26413 9.71399 7.39383 9.80067 8.9762V12.4132C9.80067 13.1667 9.66464 13.3034 9.36791 13.3034C8.57672 13.3034 6.65227 10.3974 5.51067 7.07242C5.28695 6.4261 5.06257 6.16504 4.4661 6.16504H2.13222C1.4654 6.16504 1.33203 6.47895 1.33203 6.82519C1.33203 7.44334 2.12338 10.5094 5.01622 14.5643C6.94501 17.3333 9.66198 18.8347 12.1346 18.8347C13.6182 18.8347 13.8016 18.5013 13.8016 17.927V15.834C13.8016 15.1671 13.9421 15.0341 14.4118 15.0341C14.7582 15.0341 15.3515 15.2072 16.7363 16.5423C18.3187 18.1245 18.5794 18.8347 19.4696 18.8347H21.8035C22.4703 18.8347 22.8037 18.5013 22.6113 17.8433C22.4009 17.1874 21.6454 16.2362 20.6429 15.1083C20.0989 14.4653 19.2829 13.773 19.0358 13.4269C18.6896 12.9818 18.7884 12.7841 19.0358 12.3887C19.0358 12.3887 21.8792 8.38306 22.1759 7.02307V7.02291Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a class="header-768__top-soclinks-fb" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.99999 22.6499V12.9999H6.79999V9.22992H9.99999V6.41992C9.99999 3.20992 12 1.41992 14.81 1.41992C16.21 1.41992 17.41 1.51992 17.72 1.51992V4.91992H15.72C14.12 4.91992 13.82 5.61992 13.82 6.71992V9.11992H17.53L17 12.9299H13.82V22.5499H9.99999V22.6499Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="header-360">
+      <div class="container">
+        <div class="header-360__top">
+          <div class="header-360__contacts">
+            <a class="header-360__top-logo-link" href="#" >
+              <img class="header-360__top-logo-img" src="images/logo.png" alt="">
+            </a>
+            <a class="header-360__link" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54 2.5C3.6 3.39 3.75 4.26 3.99 5.09L2.79 6.29C2.38 5.09 2.12 3.82 2.03 2.5H3.54ZM13.4 14.52C14.25 14.76 15.12 14.91 16 14.97V16.46C14.68 16.37 13.41 16.11 12.2 15.71L13.4 14.52ZM4.5 0.5H1C0.45 0.5 0 0.95 0 1.5C0 10.89 7.61 18.5 17 18.5C17.55 18.5 18 18.05 18 17.5V14.01C18 13.46 17.55 13.01 17 13.01C15.76 13.01 14.55 12.81 13.43 12.44C13.33 12.4 13.22 12.39 13.12 12.39C12.86 12.39 12.61 12.49 12.41 12.68L10.21 14.88C7.38 13.43 5.06 11.12 3.62 8.29L5.82 6.09C6.1 5.81 6.18 5.42 6.07 5.07C5.7 3.95 5.5 2.75 5.5 1.5C5.5 0.95 5.05 0.5 4.5 0.5Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="header-360__link" href="#">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0.5C4.48 0.5 0 4.98 0 10.5C0 16.02 4.48 20.5 10 20.5H15V18.5H10C5.66 18.5 2 14.84 2 10.5C2 6.16 5.66 2.5 10 2.5C14.34 2.5 18 6.16 18 10.5V11.93C18 12.72 17.29 13.5 16.5 13.5C15.71 13.5 15 12.72 15 11.93V10.5C15 7.74 12.76 5.5 10 5.5C7.24 5.5 5 7.74 5 10.5C5 13.26 7.24 15.5 10 15.5C11.38 15.5 12.64 14.94 13.54 14.03C14.19 14.92 15.31 15.5 16.5 15.5C18.47 15.5 20 13.9 20 11.93V10.5C20 4.98 15.52 0.5 10 0.5ZM10 13.5C8.34 13.5 7 12.16 7 10.5C7 8.84 8.34 7.5 10 7.5C11.66 7.5 13 8.84 13 10.5C13 12.16 11.66 13.5 10 13.5Z" fill="white"/>
+              </svg>
+            </a>
+            <button class="header-360__button-login" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 16.5V1.5H12V0.5H2V16.5H0V18.5H12V3.5H14V18.5H18V16.5H16ZM10 16.5H4V2.5H10V16.5ZM7 8.5H9V10.5H7V8.5Z" fill="white"/>
+              </svg>                
+            </button>
+            <button class="header-360__login-partner">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" d="M8 15C5.3 15 2.2 16.29 2 17.01V18H14V17C13.8 16.29 10.7 15 8 15Z" fill="white"/>
+              <path opacity="0.3" d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="white"/>
+              <path d="M22 9V7H20V9H18V11H20V13H22V11H24V9H22Z" fill="white"/>
+              <path d="M8 12C10.21 12 12 10.21 12 8C12 5.79 10.21 4 8 4C5.79 4 4 5.79 4 8C4 10.21 5.79 12 8 12ZM8 6C9.1 6 10 6.9 10 8C10 9.1 9.1 10 8 10C6.9 10 6 9.1 6 8C6 6.9 6.9 6 8 6Z" fill="white"/>
+              <path d="M8 13C5.33 13 0 14.34 0 17V20H16V17C16 14.34 10.67 13 8 13ZM14 18H2V17.01C2.2 16.29 5.3 15 8 15C10.7 15 13.8 16.29 14 17V18Z" fill="white"/>
+              <path d="M12.51 4.0498C13.43 5.1098 14 6.4898 14 7.9998C14 9.5098 13.43 10.8898 12.51 11.9498C14.47 11.6998 16 10.0398 16 7.9998C16 5.9598 14.47 4.2998 12.51 4.0498Z" fill="white"/>
+              <path d="M16.53 13.8301C17.42 14.6601 18 15.7001 18 17.0001V20.0001H20V17.0001C20 15.5501 18.41 14.4901 16.53 13.8301Z" fill="white"/>
+              </svg>
+            </button>
+          </div>
+          <div class="header-360__top-soclinks-box">
+            <a class="header-360__top-soclinks-instagram" href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3ZM1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                  fill="white"
+                />
+                <path
+                  d="M19 6C19 6.55228 18.5523 7 18 7C17.4477 7 17 6.55228 17 6C17 5.44772 17.4477 5 18 5C18.5523 5 19 5.44772 19 6Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="header-360__top-soclinks-vk" href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.1759 7.02291C22.3243 6.52846 22.1759 6.16504 21.4701 6.16504H19.1362C18.5427 6.16504 18.2693 6.47895 18.121 6.82519C18.121 6.82519 16.934 9.71804 15.2526 11.5971C14.7087 12.1411 14.4614 12.314 14.1647 12.314C14.0163 12.314 13.8016 12.1411 13.8016 11.6467V7.02291C13.8016 6.42943 13.6294 6.16504 13.1348 6.16504H9.46726C9.09651 6.16504 8.87346 6.44044 8.87346 6.7015C8.87346 7.26413 9.71399 7.39383 9.80067 8.9762V12.4132C9.80067 13.1667 9.66464 13.3034 9.36791 13.3034C8.57672 13.3034 6.65227 10.3974 5.51067 7.07242C5.28695 6.4261 5.06257 6.16504 4.4661 6.16504H2.13222C1.4654 6.16504 1.33203 6.47895 1.33203 6.82519C1.33203 7.44334 2.12338 10.5094 5.01622 14.5643C6.94501 17.3333 9.66198 18.8347 12.1346 18.8347C13.6182 18.8347 13.8016 18.5013 13.8016 17.927V15.834C13.8016 15.1671 13.9421 15.0341 14.4118 15.0341C14.7582 15.0341 15.3515 15.2072 16.7363 16.5423C18.3187 18.1245 18.5794 18.8347 19.4696 18.8347H21.8035C22.4703 18.8347 22.8037 18.5013 22.6113 17.8433C22.4009 17.1874 21.6454 16.2362 20.6429 15.1083C20.0989 14.4653 19.2829 13.773 19.0358 13.4269C18.6896 12.9818 18.7884 12.7841 19.0358 12.3887C19.0358 12.3887 21.8792 8.38306 22.1759 7.02307V7.02291Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="header-360__top-soclinks-fb" href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.99999 22.6499V12.9999H6.79999V9.22992H9.99999V6.41992C9.99999 3.20992 12 1.41992 14.81 1.41992C16.21 1.41992 17.41 1.51992 17.72 1.51992V4.91992H15.72C14.12 4.91992 13.82 5.61992 13.82 6.71992V9.11992H17.53L17 12.9299H13.82V22.5499H9.99999V22.6499Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="download">
+      <div class="container">
+        <div class="download__inner">
+          <img class="download__image" src="images/iphone-1.png" alt="" />
+          <div class="download__box">
+            <h1 class="download__title wow animate__animated animate__fadeInRight"> <span>Где</span>  скачать</h1>
+            <p class="download__description wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
+              Скачивайте приложение и создавайте свое виртуальное кафе с
+              электронным меню, доставкой и возможностью предзаказа Скачивайте
+              приложение и создавайте свое виртуальное кафе с электронным меню,
+              доставкой и возможностью предзаказа Скачивайте приложение и
+              создавайте свое виртуальное кафе с электронным меню, доставкой и
+              возможностью предзаказа
+            </p>
+            <div class="download__buttons-box wow animate__animated animate__fadeInRight" data-wow-delay="1s">
+              <a class="download__google-link" href="#">
+                <img
+                  class="download__google-link-img"
+                  src="images/google.png"
+                  alt=""
+                />
+              </a>
+              <a class="download__apple-link" href="#">
+                <img
+                  class="download__apple-link-img"
+                  src="images/apple.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="restaurant">
+      <div class="container">
+        <div class="restaurant__inner">
+          <h2 class="restaurant__title wow animate__animated animate__fadeInLeft">
+            <span>ВАШИ</span> ЛЮБИМЫЕ РЕСТОРАНЫ онлайн
+          </h2>
+          <h2 class="restaurant__title restaurant__title-360">
+            <span>ВАШИ</span> <br> ЛЮБИМЫЕ РЕСТОРАНЫ онлайн
+          </h2>
+          <div class="restaurant__text wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
+            Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа
+          </div>
+          <div class="restaurant__numbers wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+            <div class="restaurant__numbers-item">
+              <div class="restaurant__numb">
+                1740 +
+              </div>
+              <div class="restaurant__numb-text">
+                Скачиваний
+              </div>
+            </div>
+            <div class="restaurant__numbers-item">
+              <div class="restaurant__numb">
+                12 +
+              </div>
+              <div class="restaurant__numb-text">
+                Ресторанов
+              </div>
+            </div>
+            <div class="restaurant__numbers-item">
+              <div class="restaurant__numb">
+                ДО 90%
+              </div>
+              <div class="restaurant__numb-text">
+                Скидки
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform">
+      <div class="container">
+        <div class="platform__inner">
+          <div class="platform__info">
+            <h2 class="platform__title wow animate__animated animate__fadeInLeft">
+              <span>Единая плавтформа</span> ДЛЯ всей россии
+            </h2>
+            <p class="platform__text wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
+              Скачивайте приложение и создавайте свое виртуальное кафе электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказаСкачивайте приложение и создавайте свое виртуальное кафе
+            </p>
+          </div>
+          <img class="platform__image" src="images/map.png" alt="" >
+        </div>
+      </div>
+    </section>
+ 
+    <section class="delivery">
+      <div class="container">
+        <div class="delivery__inner">
+          <h2 class="delivery__title wow animate__animated animate__fadeInRight">
+            у нАС ЕСТЬ ДОСТАВКА
+          </h2>
+          <p class="delivery__text wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
+            Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа виртуальное кафе с электронным меню, доставкой
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <div class="questions__inner">
+          <h2 class="questions__title wow animate__animated animate__fadeInLeft">
+            Часто задаваемы <span>вопросы</span> 
+          </h2>
+          <div class="questions__accordion">
+            <div class="questions__accordion-item wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
+              <div class="questions__accordion-title">
+                Вопрос в несколько слов
+              </div>
+              <div class="questions__accordion-text">
+                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе    
+              </div>
+            </div>
+            <div class="questions__accordion-item wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+              <div class="questions__accordion-title">
+                Вопрос в несколько слов
+              </div>
+              <div class="questions__accordion-text">
+                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе    
+              </div>
+            </div>
+            <div class="questions__accordion-item wow animate__animated animate__fadeInLeft" data-wow-delay="1.5s">
+              <div class="questions__accordion-title">
+                Вопрос в несколько слов
+              </div>
+              <div class="questions__accordion-text">
+                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе    
+              </div>
+            </div>
+            <div class="questions__accordion-item wow animate__animated animate__fadeInLeft" data-wow-delay="2s">
+              <div class="questions__accordion-title">
+                Вопрос в несколько слов
+              </div>
+              <div class="questions__accordion-text">
+                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе    
+              </div>
+            </div>
+            <div class="questions__accordion-item wow animate__animated animate__fadeInLeft" data-wow-delay="2.5s">
+              <div class="questions__accordion-title">
+                Вопрос в несколько слов
+              </div>
+              <div class="questions__accordion-text">
+                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__inner wow animate__animated animate__fadeInRight">
+          <h2 class="reviews__title">
+            Отзывы
+          </h2>
+          <p class="reviews__slider-text-1">
+            Скачивайте приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа:
+          </p>
+          <img class="reviews__slider-img" src="images/icons/slide-dots.png" alt="">
+          <div class="reviews__slider-items">
+            <div class="reviews__slider-item">
+              <p class="reviews__slider-text-2">
+                Скачивайте приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа
+              </p>
+              <p class="reviews__slider-autor-name">
+                Андрей Mирнов, Клиент
+              </p>
+            </div>
+            <div class="reviews__slider-item">
+              <p class="reviews__slider-text-2">
+                Скачивайте приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа 
+              </p>
+              <p class="reviews__slider-autor-name">
+                Максим Mирнов, Клиент
+              </p>
+            </div>
+            <div class="reviews__slider-item">
+              <p class="reviews__slider-text-2">
+                Скачивайте приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа. Cоздавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа
+              </p>
+              <p class="reviews__slider-autor-name">
+                Сергей Mирнов, Клиент
+              </p>
+            </div>
+            <div class="reviews__slider-item">
+              <p class="reviews__slider-text-2">
+                Скачивайте приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа приложение и создавайте свое виртуальное афеэлектронным меню, доставкой и возможностью предзаказа 
+              </p>
+              <p class="reviews__slider-autor-name">
+                Владимир Mирнов, Клиент
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect">
+      <div class="container">
+        <form class="connect__form wow animate__animated animate__pulse">
+          <h2 class="connect__form-title">
+            Связаться с нами
+          </h2>
+          <p class="connect__form-subtitle">
+            Вы можете связаться с нами  по любому вопросу
+          </p>
+          <div class="connect__form-box">
+            <input class="connect__form-name" type="text" placeholder="Ваше Имя">
+            <input class="connect__form-phone" type="text" placeholder="Телефон">
+            <input class="connect__form-email" type="text" placeholder="E-mail">
+            <button class="connect__form-btn" type="submit">
+              Отправить
+            </button>
+          </div>
+          <p class="connect__form-confid-text">
+            Нажимая на кнопку “Отправить” вы соглашаетесь с 
+            <a class="connect__form-confid-text-link" href="#">
+              политикой конфиденциальности
+            </a> 
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-link" src="images/logo.png" alt="">
+          </a>
+          <div class="footer__contact-box">
+            <a class="footer__contact-phone-link" href="#" >
+              +7 977 000-00-00
+            </a>
+            <a class="footer__contact-mail-link" href="#" >
+              support@mail.ru
+            </a>
+            <button class="footer__contact-btn">
+              Войти
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer-768">
+      <div class="container">
+        <div class="header-768__top">
+          <a class="header-768__top-logo-link" href="#" >
+            <img class="header-768__top-logo-img" src="images/logo.png" alt="">
+          </a>
+          <div class="header-768__contacts">
+            <a class="header-768__link" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54 2.5C3.6 3.39 3.75 4.26 3.99 5.09L2.79 6.29C2.38 5.09 2.12 3.82 2.03 2.5H3.54ZM13.4 14.52C14.25 14.76 15.12 14.91 16 14.97V16.46C14.68 16.37 13.41 16.11 12.2 15.71L13.4 14.52ZM4.5 0.5H1C0.45 0.5 0 0.95 0 1.5C0 10.89 7.61 18.5 17 18.5C17.55 18.5 18 18.05 18 17.5V14.01C18 13.46 17.55 13.01 17 13.01C15.76 13.01 14.55 12.81 13.43 12.44C13.33 12.4 13.22 12.39 13.12 12.39C12.86 12.39 12.61 12.49 12.41 12.68L10.21 14.88C7.38 13.43 5.06 11.12 3.62 8.29L5.82 6.09C6.1 5.81 6.18 5.42 6.07 5.07C5.7 3.95 5.5 2.75 5.5 1.5C5.5 0.95 5.05 0.5 4.5 0.5Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="header-768__link" href="#">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0.5C4.48 0.5 0 4.98 0 10.5C0 16.02 4.48 20.5 10 20.5H15V18.5H10C5.66 18.5 2 14.84 2 10.5C2 6.16 5.66 2.5 10 2.5C14.34 2.5 18 6.16 18 10.5V11.93C18 12.72 17.29 13.5 16.5 13.5C15.71 13.5 15 12.72 15 11.93V10.5C15 7.74 12.76 5.5 10 5.5C7.24 5.5 5 7.74 5 10.5C5 13.26 7.24 15.5 10 15.5C11.38 15.5 12.64 14.94 13.54 14.03C14.19 14.92 15.31 15.5 16.5 15.5C18.47 15.5 20 13.9 20 11.93V10.5C20 4.98 15.52 0.5 10 0.5ZM10 13.5C8.34 13.5 7 12.16 7 10.5C7 8.84 8.34 7.5 10 7.5C11.66 7.5 13 8.84 13 10.5C13 12.16 11.66 13.5 10 13.5Z" fill="white"/>
+              </svg>
+            </a>
+            <button class="header-768__button-login" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 16.5V1.5H12V0.5H2V16.5H0V18.5H12V3.5H14V18.5H18V16.5H16ZM10 16.5H4V2.5H10V16.5ZM7 8.5H9V10.5H7V8.5Z" fill="white"/>
+              </svg>                
+            </button>
+            <button class="header__top-login-partner">
+              Стать партнером
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer-360">
+      <div class="container">
+        <div class="footer-360__inner">
+          <a class="header-360__top-logo-link" href="#" >
+            <img class="header-360__top-logo-img" src="images/logo.png" alt="">
+          </a>
+            <a class="header-360__link" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54 2.5C3.6 3.39 3.75 4.26 3.99 5.09L2.79 6.29C2.38 5.09 2.12 3.82 2.03 2.5H3.54ZM13.4 14.52C14.25 14.76 15.12 14.91 16 14.97V16.46C14.68 16.37 13.41 16.11 12.2 15.71L13.4 14.52ZM4.5 0.5H1C0.45 0.5 0 0.95 0 1.5C0 10.89 7.61 18.5 17 18.5C17.55 18.5 18 18.05 18 17.5V14.01C18 13.46 17.55 13.01 17 13.01C15.76 13.01 14.55 12.81 13.43 12.44C13.33 12.4 13.22 12.39 13.12 12.39C12.86 12.39 12.61 12.49 12.41 12.68L10.21 14.88C7.38 13.43 5.06 11.12 3.62 8.29L5.82 6.09C6.1 5.81 6.18 5.42 6.07 5.07C5.7 3.95 5.5 2.75 5.5 1.5C5.5 0.95 5.05 0.5 4.5 0.5Z" fill="white"/>
+              </svg>
+            </a>
+            <a class="header-360__link" href="#">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0.5C4.48 0.5 0 4.98 0 10.5C0 16.02 4.48 20.5 10 20.5H15V18.5H10C5.66 18.5 2 14.84 2 10.5C2 6.16 5.66 2.5 10 2.5C14.34 2.5 18 6.16 18 10.5V11.93C18 12.72 17.29 13.5 16.5 13.5C15.71 13.5 15 12.72 15 11.93V10.5C15 7.74 12.76 5.5 10 5.5C7.24 5.5 5 7.74 5 10.5C5 13.26 7.24 15.5 10 15.5C11.38 15.5 12.64 14.94 13.54 14.03C14.19 14.92 15.31 15.5 16.5 15.5C18.47 15.5 20 13.9 20 11.93V10.5C20 4.98 15.52 0.5 10 0.5ZM10 13.5C8.34 13.5 7 12.16 7 10.5C7 8.84 8.34 7.5 10 7.5C11.66 7.5 13 8.84 13 10.5C13 12.16 11.66 13.5 10 13.5Z" fill="white"/>
+              </svg>
+            </a>
+            <button class="header-360__button-login" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 16.5V1.5H12V0.5H2V16.5H0V18.5H12V3.5H14V18.5H18V16.5H16ZM10 16.5H4V2.5H10V16.5ZM7 8.5H9V10.5H7V8.5Z" fill="white"/>
+              </svg>                
+            </button>
+            <button class="header-360__login-partner">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" d="M8 15C5.3 15 2.2 16.29 2 17.01V18H14V17C13.8 16.29 10.7 15 8 15Z" fill="white"/>
+              <path opacity="0.3" d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="white"/>
+              <path d="M22 9V7H20V9H18V11H20V13H22V11H24V9H22Z" fill="white"/>
+              <path d="M8 12C10.21 12 12 10.21 12 8C12 5.79 10.21 4 8 4C5.79 4 4 5.79 4 8C4 10.21 5.79 12 8 12ZM8 6C9.1 6 10 6.9 10 8C10 9.1 9.1 10 8 10C6.9 10 6 9.1 6 8C6 6.9 6.9 6 8 6Z" fill="white"/>
+              <path d="M8 13C5.33 13 0 14.34 0 17V20H16V17C16 14.34 10.67 13 8 13ZM14 18H2V17.01C2.2 16.29 5.3 15 8 15C10.7 15 13.8 16.29 14 17V18Z" fill="white"/>
+              <path d="M12.51 4.0498C13.43 5.1098 14 6.4898 14 7.9998C14 9.5098 13.43 10.8898 12.51 11.9498C14.47 11.6998 16 10.0398 16 7.9998C16 5.9598 14.47 4.2998 12.51 4.0498Z" fill="white"/>
+              <path d="M16.53 13.8301C17.42 14.6601 18 15.7001 18 17.0001V20.0001H20V17.0001C20 15.5501 18.41 14.4901 16.53 13.8301Z" fill="white"/>
+              </svg>
+            </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
